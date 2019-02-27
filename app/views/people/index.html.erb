@@ -1,14 +1,28 @@
 <h1>People Records</h1>
 
 <% @people.each do |person| %>
+  <div class='card' style='width: 320px;'>
+  <h5><%= person.name %></h5>
 
-  <%= person.name %>
+  <hr class="my-4">
 
-  <%= link_to 'Show', person_path(person) %>
-  <%= link_to 'Edit', edit_person_path(person) %>
+  <ul class='list-group list-group-horizontal'>
+
+  <li class='list-group-item'>
+    <%= link_to 'Show', person_path(person) %>
+  </li>
+
+  <li class='list-group-item'>
+    <%= link_to 'Edit', edit_person_path(person) %>
+  </li>
+
+  <li class='list-group-item'>
   <%= link_to 'Delete', person, method: :delete %>
-  
+  </li>
+  </ul>
 <% end %>
+</div>
+
 
 <%= link_to 'Create New Record', new_person_path %>
 
