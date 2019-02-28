@@ -1,1 +1,1 @@
-"Person records" project. Part of a rails extra practice assingment.
+"Person records" project. Part of a rails extra practice assignment.
