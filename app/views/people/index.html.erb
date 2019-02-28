@@ -2,28 +2,14 @@
 
 <% @people.each do |person| %>
   <div class='card' style='width: 320px;'>
-  <h5><%= person.name %></h5>
-
-  <hr class="my-4">
-
-  <ul class='list-group list-group-horizontal'>
 
   <li class='list-group-item'>
-    <%= link_to 'Show', person_path(person) %>
-  </li>
-
-  <li class='list-group-item'>
-    <%= link_to 'Edit', edit_person_path(person) %>
-  </li>
-
-  <li class='list-group-item'>
-  <%= link_to 'Delete', person, method: :delete %>
+    <%= link_to person.name, person_path(person) %>
   </li>
   </ul>
 <% end %>
 </div>
 
-
-<%= link_to 'Create New Record', new_person_path %>
-
-
+<div>
+<%= link_to 'Create New Record', new_person_path, :class => 'btn btn-primary' %>
+</div>
