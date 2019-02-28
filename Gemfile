@@ -42,6 +42,8 @@ gem 'bootstrap', '~> 4.3.1'
 # Bootstrap depends on jquery-rails
 gem 'jquery-rails'
 
+# Faker 
+gem 'faker', '~> 1.9', '>= 1.9.3'
 
 group :development, :test do
   gem 'pry'
