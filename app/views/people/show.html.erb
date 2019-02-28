@@ -1,6 +1,9 @@
+<div class='card' style='width: 320px;'>
 
+<h5>Name:<%= @person.name %></h5>
 
-<p>Name:<%= @person.name %></p>
+<hr class="my-4">
+
 
 <p>Age:<%= @person.age %></p>
 
@@ -10,6 +13,21 @@
 
 <p>Eye color:<%= @person.eye_color %></p>
 
-<p>Living:<% @person.alive %></p>
+<p>Living:<%= @person.alive %></p>
+
+<ul class='list-group list-group-horizontal'>
+
+  <li class='list-group-item'>
+    <%= link_to 'Edit', edit_person_path(@person) %>
+  </li>
+
+  <li class='list-group-item'>
+  <%= link_to 'Delete', @person, method: :delete %>
+  </li>
+</ul>
+
+
+
+</div>
 
 <%= link_to 'Back', people_path %>
