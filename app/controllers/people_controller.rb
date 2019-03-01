@@ -49,5 +49,4 @@ class PeopleController < ApplicationController
       params.require(:person).permit(:name, :age, :gender, :hair_color, :eye_color, :alive)
     end
 
-
 end
