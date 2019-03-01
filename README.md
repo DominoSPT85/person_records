@@ -6,3 +6,7 @@
   <li>All CRUD actions</li>
   
  </ul>
+
+
+<p>Bonus: I utitlized the Faker gem to seed the db!</p>
+<p> I also imported Bootstrap for style!</p>
